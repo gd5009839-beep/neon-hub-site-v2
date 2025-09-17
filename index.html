@@ -1,0 +1,88 @@
+<!--
+  Hit RUN to see this project in action!
+
+  This project will auto-refresh as you edit the HTML, CSS and JS. See README.md for more info (including how to disable auto-refresh and install packages).
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NEON HUB - Portal exclusivo para comunidades WhatsApp e Discord">
+  <meta name="keywords" content="neon, hub, gaming, comunidade, discord, whatsapp">
+  <meta name="author" content="NEON HUB">
+  <meta property="og:title" content="NEON HUB - Portal de Comunidades">
+  <meta property="og:description" content="Acesse nossas comunidades exclusivas no WhatsApp e Discord">
+  <meta property="og:type" content="website">
+  <title>NEON HUB - Portal Exclusivo</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Particles Background -->
+  <div class="particles-container">
+    <canvas id="particles-canvas"></canvas>
+  </div>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="loading-spinner"></div>
+    <div class="loading-text">INICIANDO NEON HUB...</div>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main-content" class="main-content" style="display: block;">
+    <main>
+      <div class="header">
+        <h1 class="title glow-text">🌐 PORTAL DE COMUNIDADES</h1>
+        <div class="user-info">
+          <span class="welcome-text">Bem-vindo ao NEON HUB!</span>
+        </div>
+      </div>
+
+      <p class="description pulse-text">🚀 Conecte-se às nossas comunidades exclusivas!</p>
+
+
+      <section class="grid">
+        <a href="https://chat.whatsapp.com/L5Inc7rtAd1IlvoHXFizYv" class='card whatsapp-card' target="_blank" data-platform="whatsapp">
+          <div class="card-icon">💬</div>
+          <h2>WhatsApp Community</h2>
+          <p>📱 Conversas em tempo real</p>
+          <p>🎮 Gaming e discussões</p>
+          <div class="card-stats">
+            <span class="online-indicator">🟢</span>
+            <span>Active now</span>
+          </div>
+        </a>
+
+        <a href="https://discord.gg/YTEJXhpUmp" class='card discord-card' target="_blank" data-platform="discord">
+          <div class="card-icon">🎮</div>
+          <h2>Discord Server</h2>
+          <p>🎤 Voice channels</p>
+          <p>🏆 Gaming tournaments</p>
+          <div class="card-stats">
+            <span class="online-indicator">🟢</span>
+            <span>High activity</span>
+          </div>
+        </a>
+
+      </section>
+
+      <div class="quick-actions">
+        <button class="action-btn" id="toggle-theme-btn">
+          <span>🎨 Mudar Tema</span>
+        </button>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
